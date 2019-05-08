@@ -1,10 +1,12 @@
 #languageSwitchBox a {
   display:inline-block;
-  width:130px;
+  max-width:120px;
+  width:33%;
+  padding-left=10px;
   text-decoration:none;
   border:none;
   text-transform:none;
-  margin-bottom:3px;
+  margin-bottom:5px;
   text-overflow:ellipsis;
   white-space:nowrap;
   overflow:hidden;
