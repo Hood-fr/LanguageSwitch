@@ -1,10 +1,8 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
+// | Lexiglot - A PHP based translation tool                               |
 // +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2014 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
+// | Copyright(C) 2011-2013 Damien Sorel       http://www.strangeplanet.fr |
 // +-----------------------------------------------------------------------+
 // | This program is free software; you can redistribute it and/or modify  |
 // | it under the terms of the GNU General Public License as published by  |
@@ -21,22 +19,9 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 
-/*
-Plugin Name: Language Switch
-Version: 12.3.0
-Description: Switch to another language from flags on your gallery home page.
-Plugin URI: http://piwigo.org/ext/extension_view.php?eid=123
-Author: Piwigo team
-Author URI: http://piwigo.org
-*/
-
-if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
-
-define('LANGUAGE_SWITCH_PATH' , PHPWG_PLUGINS_PATH.basename(dirname(__FILE__)).'/');
-
-include_once(LANGUAGE_SWITCH_PATH.'language_switch.inc.php');
-
-add_event_handler('loading_lang', 'language_controler_switch', 5 );
-add_event_handler('loc_end_index', 'language_controler_flags', 95 );
-
+$url = '../';
+header( 'Request-URI: '.$url );
+header( 'Content-Location: '.$url );
+header( 'Location: '.$url );
+exit();
 ?>
