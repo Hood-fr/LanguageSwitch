@@ -1,12 +1,10 @@
 #languageSwitchBox a {
   display:inline-block;
-  max-width:120px;
-  width:33%;
-  padding-left=10px;
+  width:130px;
   text-decoration:none;
   border:none;
   text-transform:none;
-  margin-bottom:5px;
+  margin-bottom:3px;
   text-overflow:ellipsis;
   white-space:nowrap;
   overflow:hidden;
@@ -16,19 +14,14 @@
   margin-bottom:5px;
   margin-top:5px;
 }
-
-[class^="pwg-icon langflag"] 
-{
+[class*="langflag-"] {
   background-image:url('flag_sprite.jpg') !important;
   background-repeat:no-repeat;
   background-position:24px 16px;
-  text-indent: -9999px; 
-  overflow: hidden;
   margin-right:3px;
   width:24px;
   height:16px;
   direction:ltr;
-  font-size:13px;
 }
 
 /** Change the langflag-XX label to match a new language. All flags are represented there**/
@@ -37,7 +30,7 @@
 .langflag-af { background-position:-48px 0px; }
 .langflag-ag { background-position:-72px 0px; }
 .langflag-al { background-position:-96px 0px; }
-.langflag-am { background-position:-120px 0px; }
+.langflag-hy_AM { background-position:-120px 0px; }
 .langflag-an { background-position:-144px 0px; }
 .langflag-ao { background-position:-168px 0px; }
 .langflag-es_AR { background-position:-192px 0px; }
