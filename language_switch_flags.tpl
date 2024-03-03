@@ -7,7 +7,7 @@
   {foreach from=$lang_switch.flags item=flag name=f}
   <a rel="nofollow" href="{$flag.url}">
 {*    {if $lang_info.direction=="ltr"}<span class="pwg-icon langflag-{$flag.code}">{$flag.alt}</span>{$flag.title}{else}{$flag.title}<span class="pwg-icon langflag-{$flag.code}">{$flag.alt}</span>{/if}*}
-    <span class="pwg-icon langflag-{$flag.code}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{$flag.alt|substr:-4}&nbsp;{$flag.title}
+    <span class="pwg-icon langflag-{$flag.code}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{substr($flag.alt,-4)}&nbsp;{$flag.title}
   </a>
   {if ($smarty.foreach.f.index+1)%3 == 0}<br>{/if}
   {/foreach}
